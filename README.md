@@ -3,7 +3,7 @@
 > [!WARNING]  
 > This is a sample project intended to demonstrate how a feature can be used. It is not battle tested or maintained and creators should proceed with caution when adapting it for their own experiences.
 
-This repository contains a demonstration of how to use the Binary Input / Output features of the Open Cloud Luau Execution API.
+This repository contains a demonstration of how to use the Binary Input / Output features of the [Open Cloud Luau Execution API](https://create.roblox.com/docs/cloud/reference/LuauExecutionSessionTask).
 
 It includes:
 
@@ -23,11 +23,13 @@ Next, create a Open Cloud API key with `luau-execution-sessions:write` access to
 
 Ensure your cwd is this directory, then add your API key to the environment then run the lune script.
 
+Shell (MacOs / Linux):
 ```sh
 export ROBLOX_API_KEY=abcdefg
 lune run demo.lua
 ```
 
+Batch (Windows):
 ```cmd
 set ROBLOX_API_KEY=abcdefg
 lune run demo.lua
