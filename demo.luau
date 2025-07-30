@@ -19,7 +19,7 @@ DemoSDK.uploadBinaryFile(binaryInput.uploadUri, filePath)
 
 -- Step 3) Create a task with the binary input path, script source to run with binary output enabled
 print("Creating task...")
-local scriptSource = fs.readFile("scriptToRun.lua")
+local scriptSource = fs.readFile("scriptToRun.luau")
 local task = DemoSDK.createTask(
 	apiKey,
 	{ universeId = universeId, placeId = placeId, placeVersion = placeVersion },
