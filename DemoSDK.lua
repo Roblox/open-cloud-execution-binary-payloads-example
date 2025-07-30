@@ -12,7 +12,7 @@ local task = require("@lune/task")
 local function getFileSize(filePath: string): number
 	if process.os == "windows" then
 		filePath = filePath:gsub("'", "''")
-		local results = process.exec("powershell.exe", { "-NoProfile", "-Command", `(Get-Item '{filePath}'}).length` })
+		local results = process.exec("powershell.exe", { "-NoProfile", "-Command", "(Get-Item '" .. filePath .. "').length"}).length` })
 		assert(results.ok, results.stderr)
 		local size = tonumber(results.stdout:match("%s*(%d+)"))
 		assert(size, `Failed to parse file size from output: {results.stdout}`)
