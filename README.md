@@ -7,9 +7,9 @@ This repository contains a demonstration of how to use the Binary Input / Output
 
 It includes:
 
-- `DemoSDK.lua` A quick SDK for Luau Execution Sessions thrown together to unlock the demo
-- `demo.lua` An example of how to use both binary inputs + outputs 
-- `scriptToRun.lua` The payload executed
+- `DemoSDK.luau` A quick SDK for Luau Execution Sessions thrown together to unlock the demo
+- `demo.luau` An example of how to use both binary inputs + outputs 
+- `scriptToRun.luau` The payload executed
 
 This demo runs in [Lune](https://lune-org.github.io/docs).
 
@@ -17,7 +17,7 @@ This demo runs in [Lune](https://lune-org.github.io/docs).
 
 Be sure to install Lune, the quickest way is using Rokit. More info can be found in [Lune's docs](https://lune-org.github.io/docs/getting-started/1-installation).
 
-Next, create a Open Cloud API key with `luau-execution-sessions:write` access to a specific Place. Then update `demo.lua` to include your universeId and placeId 
+Next, create a Open Cloud API key with `luau-execution-sessions:write` access to a specific Place. Then update `demo.luau` to include your universeId and placeId 
 
 ## Usage
 
@@ -26,13 +26,13 @@ Ensure your cwd is this directory, then add your API key to the environment then
 Shell (MacOs / Linux):
 ```sh
 export ROBLOX_API_KEY=abcdefg
-lune run demo.lua
+lune run demo.luau
 ```
 
 Batch (Windows):
 ```cmd
 set ROBLOX_API_KEY=abcdefg
-lune run demo.lua
+lune run demo.luau
 ```
 
 ## Expected Output
